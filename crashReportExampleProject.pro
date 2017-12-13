@@ -35,4 +35,10 @@ FORMS += \
         mainwindow.ui
 
 #INCLUDEPATH += .
-LIBS += -L"CrashRpt1403" -lCrashRpt1403
+#LIBS += -L"CrashRpt1403" -lCrashRpt1403
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/./ -lCrashRpt1403
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/./ -lCrashRpt1403d
+
+INCLUDEPATH += $$PWD/.
+DEPENDPATH += $$PWD/.

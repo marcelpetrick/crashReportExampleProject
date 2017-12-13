@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 
     // Install crash handlers
     int nInstResult = crInstall(&info);
-    assert(nInstResult==0);
+    //assert(nInstResult==0);
 
 //    // Check result
 //    if(nInstResult!=0)
