@@ -28,7 +28,8 @@ SOURCES += \
         mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h
+mainwindow.h \
+CrashRpt.h
 
 FORMS += \
         mainwindow.ui
