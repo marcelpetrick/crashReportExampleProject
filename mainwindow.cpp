@@ -23,5 +23,8 @@ void MainWindow::slotCrashButtonClicked()
     qDebug() << __FUNCTION__; //todom remove
 
     //! TODO produce a crash
-    //int a = 10 / (int)0;
+    //int a = 10 / (int)0; // compiler error C2124
+    //abort(); - works fine
+    throw 42;
+    //0[""]--; //compiler-eror due to l-value assignment
 }
