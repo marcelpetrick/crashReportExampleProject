@@ -33,3 +33,6 @@ CrashRpt.h
 
 FORMS += \
         mainwindow.ui
+
+#INCLUDEPATH += .
+LIBS += -L"CrashRpt1403" -lCrashRpt1403
